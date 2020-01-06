@@ -47,15 +47,81 @@ git clone https://github.com/en696/ProjektP2
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/git-clone.png)
 
 kubectl create namespace projekt
+
+
 Tworzy namespace aby aplikacja nie działała w defult namespace
 
-![Diagram](https://github.com/en696/P3/blob/master/Obrazki/projekt-namespaces.png)
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/projekt-namespace.png)
 
 
 kubectl apply -f traefik-rbac.yaml
 
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/rbc.png)
+
 
 kubectl apply -f traefik-ingress-controller.yaml
+
+Tworzy ingres kontroler który zawiera Service i Deployment i znajduje sie w namespace kube-system dla większego bezpieczeństwa aby zwykły użytkownik nie mógł go skasować.
+Jako ingres kontrolera uzyłem traefika.
+Kontener wystawia dwa porty 80 do usług http oraz 8080 do zarzadzania do dashborda
+Automatycznie utworzy nam się usługa load balanser w google cloud 
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/traefik-ingress-controller.png)
+
+
+
+kubectl apply -f ui.yaml
+Tworzy ingresa oraz service dla dashborda
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/ui.yaml.png)
+
+
+kubectl apply -f cheese-deployments.yaml
+Stworzy 3 obiekty typu deployment prostych aplikacji którzy wystawiaja tylko jedna podstronę
+Każdy depolyment zawiera 2 pody.
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/projekt-namespace.png)
+
+
+
+
+
+kubectl apply -f cheese-services.yaml
+
+Tworzy obiekty typu service dla obiektów deployment 
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/projekt-namespace.png)
+
+
+kubectl apply -f cheeses-ingress.yaml
+
+Tworzy obiekt ingres dla obiektów deploymnet
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/projekt-namespace.png)
+
+
+kubectl create namespace jenkins
+
+Tworzy namspace jenkins aby odseparować od siebie aplikacje 
+
+
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/namespacejenkins.png)
+
+
+
+
+kubectl apply -f jenkins-deploy.yaml
+Tworzy obiekt typu deployment , services oraz ingres
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/projekt-namespace.png)
+
 
 
 

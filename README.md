@@ -33,14 +33,30 @@ Wybieramy konfiguracja maszyny n1-standart-1 w konfiguracji zawansowanej zmiejsz
 
 <h3>Polecenie które utworzy nam klaster kubernetesa</h3>
 
-Polecenie te należy wpisać w consoli goggle cloud 
+Nie musimy tworzyć klastra recznie mozemy wykorzystać to polecenie.
+Polecenie te należy wpisać w consoli google cloud 
 
-gcloud beta container --project "virtual-tape-250814" clusters create "standard-cluster-2" --zone "us-central1-a" --no-enable-basic-auth --cluster-version "1.13.11-gke.14" --machine-type "n1-standard-1" --image-type "COS" --disk-type "pd-standard" --disk-size "50" --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --num-nodes "3" --enable-cloud-logging --enable-cloud-monitoring --enable-ip-alias --network "projects/virtual-tape-250814/global/networks/default" --subnetwork "projects/virtual-tape-250814/regions/us-central1/subnetworks/default" --default-max-pods-per-node "110" --addons HorizontalPodAutoscaling,HttpLoadBalancing --enable-autoupgrade --enable-autorepair
+gcloud beta container --project "virtual-tape-250814" clusters create "standard-cluster-2" --region "europe-west3" --no-enable-basic-auth --cluster-version "1.13.11-gke.14" --machine-type "n1-standard-1" --image-type "COS" --disk-type "pd-standard" --disk-size "50" --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --num-nodes "3" --enable-cloud-logging --enable-cloud-monitoring --enable-ip-alias --network "projects/virtual-tape-250814/global/networks/default" --subnetwork "projects/virtual-tape-250814/regions/europe-west3/subnetworks/default" --default-max-pods-per-node "110" --addons HorizontalPodAutoscaling,HttpLoadBalancing --enable-autoupgrade --enable-autorepair
 
 <h3>Proces wdrożenia aplikacji w klastrze kubernetesa</h3>
 
 Logujemy  się do consoli w google cloud która zarzadza klastrem 
 Należy pobrać konfiguracje obiektów które chcemy wdrozyć, konfiguracje możemy pobrać za pomocą gita
+git clone https://github.com/en696/ProjektP2
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/git-clone.png)
+
+kubectl create namespace projekt
+Tworzy namespace aby aplikacja nie działała w defult namespace
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/projekt-namespaces.png)
+
+
+kubectl apply -f traefik-rbac.yaml
+
+
+kubectl apply -f traefik-ingress-controller.yaml
+
 
 
 

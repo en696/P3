@@ -16,16 +16,31 @@ Wybieramy opcje Klaster Standardowy
 
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/Klaster-standardowy.png)
 
+
 Wybieramy nazwe klastra
+
 Wybierami opcje gdzie chcemy aby działał klaster w Typ lokalizacji wybieramy Region  europe-west3 ponieważ to Frankfurt. czyli jedna z najblizej nam połozona lokalizacja.
 
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/region.png)
+
+
+Należy teraz wybrać Liczba węzłów tzn z ilu nodów bedzie składał się nasz klaster ja wybrałem 3.
+Wybieramy konfiguracja maszyny n1-standart-1 w konfiguracji zawansowanej zmiejszmy rozmiar dysku do 50 GB.
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/nody-konfiguracja.png)
+
+
+<h3>Polecenie które utworzy nam klaster kubernetesa</h3>
+
+Polecenie te należy wpisać w consoli goggle cloud 
+
+gcloud beta container --project "virtual-tape-250814" clusters create "standard-cluster-2" --zone "us-central1-a" --no-enable-basic-auth --cluster-version "1.13.11-gke.14" --machine-type "n1-standard-1" --image-type "COS" --disk-type "pd-standard" --disk-size "50" --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --num-nodes "3" --enable-cloud-logging --enable-cloud-monitoring --enable-ip-alias --network "projects/virtual-tape-250814/global/networks/default" --subnetwork "projects/virtual-tape-250814/regions/us-central1/subnetworks/default" --default-max-pods-per-node "110" --addons HorizontalPodAutoscaling,HttpLoadBalancing --enable-autoupgrade --enable-autorepair
 
 <h3>Proces wdrożenia aplikacji w klastrze kubernetesa</h3>
 
 Logujemy  się do consoli w google cloud która zarzadza klastrem 
 Należy pobrać konfiguracje obiektów które chcemy wdrozyć, konfiguracje możemy pobrać za pomocą gita
-
 
 
 

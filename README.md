@@ -9,7 +9,8 @@
 <h1>4.2.4 Proces serwisowania</h1>
 <h1>4.2.5 Kosztorys</h1>
 
-<h3>Ceny na dzień 01.01.2020</h3>
+<h3> Miesieczny koszt utrzymania ceny na dzień 01.01.2020</h3>
+
 
 Koszt za load balancer USD 21.91 per mounth
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/load-cena.png)
@@ -26,8 +27,11 @@ Za 100 GB wspłodzelonego dysku pomiedzy nodami w klastrze zapłacimy USD 4.80 p
 
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/total-cena.png)
 
-A koszt wdrożenia to około 3-5h pracy x 200 zł per h to około 600-1000zł
+<h3>Koszt wdrożenia</h3>
 
+Koszt wdrożenia to około 3-5h pracy x 200 zł per h to około 600-1000zł
+
+<h3>Koszt aktualizacji</h3>
 Koszt aktualizacji konfiguracji  klastra jest zalezny od pracochłoności zadania godzina pracy to 200 zł 
 
 <h1>4.2.5 Końcowe testy</h1>

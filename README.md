@@ -13,6 +13,8 @@
 
 Koszt za load balancer USD 21.91 per mounth
 
+
+
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/load-cena.png)
 
 Koszt clustra kubernetesa złożonego z trzech maszyn oraz uwzględniłem że cluster będzie działa 24/7 USD 72.82 per mounth

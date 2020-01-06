@@ -22,6 +22,8 @@ Za 100 GB wspłodzelonego dysku pomiedzy nodami w klastrze zapłacimy USD 4.80 p
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/store-cena.png)
 
 Łaczny koszt utrzymania infrastruktury to około USD 99.53 per 1 month 
+
+
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/total-cena.png)
 
 A koszt wdrożenia to około 3-5h pracy x 200 zł per h to około 600-1000zł

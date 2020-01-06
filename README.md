@@ -83,7 +83,7 @@ Stworzy 3 obiekty typu deployment prostych aplikacji którzy wystawiaja tylko je
 Każdy depolyment zawiera 2 pody.
 
 
-![Diagram](https://github.com/en696/P3/blob/master/Obrazki/projekt-namespace.png)
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/cheese-deployments.yaml.png)
 
 
 
@@ -94,7 +94,7 @@ kubectl apply -f cheese-services.yaml
 Tworzy obiekty typu service dla obiektów deployment 
 
 
-![Diagram](https://github.com/en696/P3/blob/master/Obrazki/projekt-namespace.png)
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/fcheese-services.yaml.png)
 
 
 kubectl apply -f cheeses-ingress.yaml
@@ -102,7 +102,7 @@ kubectl apply -f cheeses-ingress.yaml
 Tworzy obiekt ingres dla obiektów deploymnet
 
 
-![Diagram](https://github.com/en696/P3/blob/master/Obrazki/projekt-namespace.png)
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/cheeses-ingress.yaml.png)
 
 
 kubectl create namespace jenkins
@@ -112,7 +112,7 @@ Tworzy namspace jenkins aby odseparować od siebie aplikacje
 
 
 
-![Diagram](https://github.com/en696/P3/blob/master/Obrazki/namespacejenkins.png)
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/jenkins-deploy.yaml.png)
 
 
 

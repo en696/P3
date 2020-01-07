@@ -7,7 +7,11 @@
 
 
 <h3>Zastosowane technologie</h3>
-Google cloud Kubernetes engine
+
+<h4>Google cloud Kubernetes engine</h4>
+
+Otwartoźródłowa platforma do zarządzania, automatyzacji i skalowania aplikacji kontenerowych. Jego pierwotna wersja została stworzona w 2014 roku przez Google, a obecnie rozwijany jest przez Cloud Native Computing Foundation.
+
 
 Google cloud load balanser
 

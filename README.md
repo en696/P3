@@ -144,6 +144,8 @@ Koszt clustra kubernetesa złożonego z trzech maszyn oraz uwzględniłem że cl
 
 
 Za 100 GB wspłodzelonego dysku pomiedzy nodami w klastrze zapłacimy
+
+
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/store-cena.png)
 
 Łaczny koszt utrzymania infrastruktury to około USD 99.53 per 1 month 

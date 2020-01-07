@@ -7,18 +7,18 @@
 
 <h3>Specyfikacja środowiska</h3>
 
-Klaster kubernetesa znajduje się w google cloud i składa się on z:
-1x master kubernetesa
-3x slave kubernetesa n1-standard-1
-Region działania klustra kubernetesa w google cloud to europe-west3
-Konfiguracja każdego node n1-standard-1 jest taka sama:
-Procesor 1 core Xeon(R) CPU @ 2.30GHz
-RAM: 3.75GB
-Wersja OS "Linux Container-Optimized OS" możemy system zmienić na ubuntu podczas tworzenia klastra
-Dysk 50GB lokalny do każdego noda 
-Dysk 100GB wspłudzielony pomiedzy nodami
-Każdy node posiada efemeryczny adres  publiczny 
-Wersja docker engina: Docker version 18.09.7, build 2d0083d
+Klaster kubernetesa znajduje się w google cloud i składa się on z: <br>
+1x master kubernetesa <br>
+3x slave kubernetesa n1-standard-1 <br>
+Region działania klustra kubernetesa w google cloud to europe-west3 <br>
+Konfiguracja każdego node n1-standard-1 jest taka sama: <br>
+Procesor 1 core Xeon(R) CPU @ 2.30GHz <br>
+RAM: 3.75GB <br>
+Wersja OS "Linux Container-Optimized OS" możemy system zmienić na ubuntu podczas tworzenia klastra <br>
+Dysk 50GB lokalny do każdego noda  <br>
+Dysk 100GB wspłudzielony pomiedzy nodami <br>
+Każdy node posiada efemeryczny adres  publiczny <br>
+Wersja docker engina: Docker version 18.09.7, build 2d0083d <br>
 Google cloud load balanser typu: Równoważenie obciążenia TCP na poziomie warstwy 4 dla aplikacji działających w oparciu o protokół TCP/SSL
 
 

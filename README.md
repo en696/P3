@@ -7,6 +7,31 @@
 
 
 <h3>Zastosowane technologie</h3>
+Google cloud Kubernetes engine
+
+Google cloud load balanser
+
+<h4>Google cloud persistent volumes</h4>
+
+W przeciwieństwie do Volumes, cyklem życia PersistentVolumes zarządza Kubernetes. PersistentVolumes można dynamicznie udostępniać; użytkownik nie musi ręcznie tworzyć i usuwać kopii zapasowej.
+<br>
+PersistentVolumes to zasoby klastra, które istnieją niezależnie od zasobników. Oznacza to,że dysk i dane reprezentowane przez PersistentVolume nadal istnieją w miarę zmian w klastrze oraz w trakcie usuwania i ponownego tworzenia zasobników. Zasoby PersistentVolume mogą być udostępniane dynamicznie za pośrednictwem PersistentVolumeClaims lub mogą być jawnie tworzone przez administratora klastra.
+
+
+<h4>Traefik</h4>
+Traefik to open-source Edge Router, jest routerem wartswy 7. Który sprawia że otrzymuje żądania w imieniu systemu i dowiaduje się, które komponenty są odpowiedzialne za ich obsługę.Zapinamy do niego naszą domenę i wskazujemy mu odpowiedni komponent po który ma uderzać na poszczególnej domenie lub sciezce w domenie np edomin.pl/jenkins 
+
+
+<h4>Docker</h4>
+Docker jest otwartym oprogramowaniem służącym do realizacji wirtualizacji na poziomie systemu operacyjnego (tzw. „konteneryzacji”), działające jako „platforma dla programistów i administratorów do tworzenia, wdrażania i uruchamiania aplikacji rozproszonych”.<br>
+
+Docker jest określany jako narzędzie, które pozwala umieścić program oraz jego zależności (biblioteki, pliki konfiguracyjne, lokalne bazy danych itp.) w lekkim, przenośnym, wirtualnym kontenerze, który można uruchomić na prawie każdym serwerze z systemem Linux
+
+<h4>Nginx</h4>
+Serwer WWW (HTTP) oraz serwer proxy dla HTTP.<br>
+Zaprojektowany z myślą o wysokiej dostępności i silnie obciążonych serwisach (nacisk na skalowalność i niską zajętość zasobów). Wydawany jest na licencji BSD. 
+
+
 
 <h3>Specyfikacja środowiska</h3>
 

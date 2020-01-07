@@ -117,7 +117,8 @@ Tworzy namspace jenkins aby odseparować od siebie aplikacje
 
 
 
-kubectl apply -f jenkins-deploy.yaml
+<b>kubectl apply -f jenkins-deploy.yaml</b>
+
 Tworzy obiekt typu deployment , services oraz ingres
 
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/projekt-namespace.png)

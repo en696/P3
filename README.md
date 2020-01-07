@@ -46,7 +46,7 @@ git clone https://github.com/en696/ProjektP2
 
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/git-clone.png)
 
-kubectl create namespace projekt
+<b>kubectl create namespace projekt</b>
 
 
 Tworzy namespace aby aplikacja nie działała w defult namespace
@@ -54,12 +54,12 @@ Tworzy namespace aby aplikacja nie działała w defult namespace
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/projekt-namespace.png)
 
 
-kubectl apply -f traefik-rbac.yaml
+<b>kubectl apply -f traefik-rbac.yaml</b>
 
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/rbc.png)
 
 
-kubectl apply -f traefik-ingress-controller.yaml
+<b>kubectl apply -f traefik-ingress-controller.yaml</b>
 
 Tworzy ingres kontroler który zawiera Service i Deployment i znajduje sie w namespace kube-system dla większego bezpieczeństwa aby zwykły użytkownik nie mógł go skasować.
 Jako ingres kontrolera uzyłem traefika.
@@ -71,14 +71,15 @@ Automatycznie utworzy nam się usługa load balanser w google cloud
 
 
 
-kubectl apply -f ui.yaml
+<b>kubectl apply -f ui.yaml</b>
 Tworzy ingresa oraz service dla dashborda
 
 
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/ui.yaml.png)
 
 
-kubectl apply -f cheese-deployments.yaml
+<b>kubectl apply -f cheese-deployments.yaml</b>
+
 Stworzy 3 obiekty typu deployment prostych aplikacji którzy wystawiaja tylko jedna podstronę
 Każdy depolyment zawiera 2 pody.
 
@@ -89,7 +90,7 @@ Każdy depolyment zawiera 2 pody.
 
 
 
-kubectl apply -f cheese-services.yaml
+<b>kubectl apply -f cheese-services.yaml</b>
 
 Tworzy obiekty typu service dla obiektów deployment 
 
@@ -97,7 +98,7 @@ Tworzy obiekty typu service dla obiektów deployment
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/fcheese-services.yaml.png)
 
 
-kubectl apply -f cheeses-ingress.yaml
+<b>kubectl apply -f cheeses-ingress.yaml</b>
 
 Tworzy obiekt ingres dla obiektów deploymnet
 
@@ -105,7 +106,7 @@ Tworzy obiekt ingres dla obiektów deploymnet
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/cheeses-ingress.yaml.png)
 
 
-kubectl create namespace jenkins
+<b>kubectl create namespace jenkins</b>
 
 Tworzy namspace jenkins aby odseparować od siebie aplikacje 
 

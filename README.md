@@ -5,6 +5,9 @@
 <h1>4.2 Cześć praktyczna</h1>
 <h1>4.2.1 Dokumentacja techniczna</h1>
 
+
+<h3>Zastosowane technologie</h3>
+
 <h3>Specyfikacja środowiska</h3>
 
 Klaster kubernetesa znajduje się w google cloud i składa się on z: <br>
@@ -20,6 +23,11 @@ Dysk 100GB wspłudzielony pomiedzy nodami <br>
 Każdy node posiada efemeryczny adres  publiczny <br>
 Wersja docker engina: Docker version 18.09.7, build 2d0083d <br>
 Google cloud load balanser typu: Równoważenie obciążenia TCP na poziomie warstwy 4 dla aplikacji działających w oparciu o protokół TCP/SSL
+
+
+<h3>Zastosowania oraz eksploatacji projektu</h3>
+
+
 
 
 

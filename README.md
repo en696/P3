@@ -70,12 +70,12 @@ lynx http://edomin.pl/nginx
 
 <h4>Pierwsza próba</h4>
 
-![Diagram](https://github.com/en696/P3/blob/master/Obrazki/nginx1.png
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/nginx1.png)
 
 
 <h4>Druga próba</h4>
 
-![Diagram](https://github.com/en696/P3/blob/master/Obrazki/nginx2.png
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/nginx2.png)
 
 
 

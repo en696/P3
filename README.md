@@ -205,6 +205,24 @@ Tworzy obiekt typu deployment , services oraz ingres
 
 <h1>4.2.4 Proces serwisowania</h1>
 
+Utrzymanie aplikacji dzieki zastosowanie rozwiazanie w chmurze jest duzo prostrze do utrzymania niz jesli chcielibysmy klaster kubernetesa utrzymywać lokalnie 
+Odchodzą nam taki problemy jak zarzadzanie samym klastrem  kubernetesa.
+Nie interesuje nas rowniez warstwy nizsze takie jak sprzet fizyczny tzn servery, routery, macierze dyskowe oraz backupowanie mastera w klastrze kubernetesa.
+Rownież mamy o wiele łatwiejsze skalowanie samej infrastruktóry ponieważ bardzo łatwo mozmey dorzucić kolejne nody do klastra kubernetesa lub zmienjszyć ilość nodów w klastrze.
+Wystartowanie nowych nodów w google cloud trwa minitu. A w infrastruktórze własnej mogło by nawet trwać miesiąć jesli mósielibysy zamówićnowy server dostarczyc go do DC oraz wpiąć go do klastra.
+
+
+<h4>Jak skalować aplikacje</h4>
+
+
+<h4>Jak wgrać nową wersje aplikacji</h4>
+
+
+<h4>Jak diagnozować kontener z aplikacją</h4>
+
+
+<h4>Jak diagnozować problemy z niedziałajaca aplikacja</h4>
+
 
 <h1>4.2.5 Kosztorys</h1>
 

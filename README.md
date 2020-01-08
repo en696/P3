@@ -11,9 +11,12 @@
 <h4>Google cloud Kubernetes engine</h4>
 
 Otwartoźródłowa platforma do zarządzania, automatyzacji i skalowania aplikacji kontenerowych. Jego pierwotna wersja została stworzona w 2014 roku przez Google, a obecnie rozwijany jest przez Cloud Native Computing Foundation.
+Jest to gotowa usługa do wdrożenia obiektów kubernetesa google sam tworzy nam cluster i konfiguruje maszyny VM w google compute na których mozemy implementować naszę aplikacje bez martwienia się maszynami wirtualnymi podspodem clustra.
 
 
 Google cloud load balanser
+Load balanser w google cloud jest bardzo rozbudowany i może działać na róznych warstwach sieciowych 4 lub 7. 
+Jest to load balanser softerowy, bardzo łatwo się skaluje jest równiez bardzo wydajny jest wstanie przyjać milion zapytań na sekunde 
 
 <h4>Google cloud persistent volumes</h4>
 
@@ -54,9 +57,25 @@ Wersja docker engina: Docker version 18.09.7, build 2d0083d <br>
 Google cloud load balanser typu: Równoważenie obciążenia TCP na poziomie warstwy 4 dla aplikacji działających w oparciu o protokół TCP/SSL
 
 
-<h3>Zastosowania oraz eksploatacji projektu</h3>
+<h3>Zastosowanie</h3>
+
+Projekt można zastosować do wdrożenia aplikacji webowej której chcemy zapewnić wysoką dostepność oraz łatwość w skalowaniu.
 
 
+<h3>Eksploatacji projektu</h3>
+
+Sprawdzam czy Load balancer działa prawidłowo i czy działa round robin. usługa nginx zwraca adres ip poda oraz hostname wiec nadaje sie idealnie do tego aby to sprawdzić
+
+lynx http://edomin.pl/nginx
+
+<h4>Pierwsza próba</h4>
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/nginx1.png
+
+
+<h4>Druga próba</h4>
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/nginx2.png
 
 
 

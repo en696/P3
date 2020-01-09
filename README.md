@@ -221,7 +221,7 @@ Pody automatycznie się zeskalują do wartości maksymalnej podczas duzego obcia
 
 Możemy rownież recznie wymusić skalowanie 
 
-Domyślnie cheese-deployments.yaml zawiera każdego poda w dwóch replikach. Ale możemy łatwo zeskalować wszystkie obiekty zawarte w tym pliku za pomocą 
+Domyślnie cheese-deployments.yaml zawiera każdego poda w dwóch replikach. Ale możemy łatwo zeskalować wszystkie obiekty do 3 szt  zawarte w tym pliku za pomocą 
 
 <b>kubectl scale --replicas=3 -f cheese-deployments.yaml</b>
 
@@ -232,6 +232,9 @@ Domyślnie cheese-deployments.yaml zawiera każdego poda w dwóch replikach. Ale
 
 
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/skalowanie.png)
+
+
+W taki sam sposób mozemy zmniejszyć liczbe działajacych podów
 
 
 <h4>Jak wgrać nową wersje aplikacji</h4>

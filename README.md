@@ -214,6 +214,25 @@ Wystartowanie nowych nodów w google cloud trwa minitu. A w infrastruktórze wł
 
 <h4>Jak skalować aplikacje</h4>
 
+Obiekty depolyment który zastosowaliśmy możemy ustawić automatyczne skalowanie przez odanie minimalnej oraz maksymalnej liczby podów. <br>
+Pody automatycznie się zeskalują do wartości maksymalnej podczas duzego obciazenia podów , oraz gdy obziazenie się zniejszy ilość podów znowu wróci do mniejszej liczby podów
+
+
+
+Możemy rownież recznie wymusić skalowanie 
+
+Domyślnie cheese-deployments.yaml zawiera każdego poda w dwóch replikach. Ale możemy łatwo zeskalować wszystkie obiekty zawarte w tym pliku za pomocą 
+
+<b>kubectl scale --replicas=3 -f cheese-deployments.yaml</b>
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/scale.png)
+
+
+<b>kubectl get pod  --namespace=projekt</b>
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/skalowanie.png)
+
 
 <h4>Jak wgrać nową wersje aplikacji</h4>
 

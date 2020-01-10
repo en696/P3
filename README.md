@@ -2,7 +2,12 @@
 
 
 <h1>4.1 Wstęp</h1>
-<h1>4.2 Cześć praktyczna</h1>
+
+Projekt ukazuje  jeden z sposobów tworzenia (Projektowania i wdrażania) nowoczesnej infrastruktury i środowiska pod aplikacje webowa. Projekt ukazuje wdrożenie dwóch aplikacji webowych które zostały zkonteryzowana w dokerze i zostały osadzone w google cloud a są zarzadzania za pomocą kubernetesa. Wykorzystałem moduły odpowiedzialne za wysoką dostepność i omowię load balanser oraz kwestie sieciowe wewnatrz klastra kubernetes.
+Projekt miał za cel pokazanie jak zbudować load balanser na clustrze kubernetesa w google cloud oraz jak doprwodzić ruch do odpowienich aplikacji oraz omiwienie zasad działania sieci w klastrze kubernetesa
+
+
+
 <h1>4.2.1 Dokumentacja techniczna</h1>
 
 

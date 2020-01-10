@@ -123,6 +123,11 @@ W taki sam sposób mozemy zmniejszyć liczbe działajacych podów
 
 <h4>Jak wgrać nową wersje aplikacji</h4>
 
+Należy utworzyć nową wersje kontenera w której bedzie nowa wersja aplikacji 
+Należy ten obraz udostepnić do naszego repozytorium dockera
+
+kubectl rolling-update NAME -f FILE 
+
 <h1>4.2.3 Dokumentacja wdrażania</h1>
 
 <h3>Proces wdrożenia klastra kubernetes</h3>
@@ -253,7 +258,6 @@ Rownież mamy o wiele łatwiejsze skalowanie samej infrastruktóry ponieważ bar
 Wystartowanie nowych nodów w google cloud trwa minitu. A w infrastruktórze własnej mogło by nawet trwać miesiąć jesli mósielibysy zamówićnowy server dostarczyc go do DC oraz wpiąć go do klastra.
 
 
-<h4>Jak wgrać nową wersje aplikacji</h4>
 
 <h4>Jak diagnozować kontener z aplikacją</h4>
 
@@ -376,4 +380,7 @@ Koszt aktualizacji konfiguracji  klastra jest zalezny od pracochłoności zadani
 
 <h1>4.2.5 Końcowe testy</h1>
 <h1>4.3 Wnioski końcowe</h1>
+
 <h1>4.4 Literatura</h1>
+
+https://blog.laputa.io/kubernetes-flannel-networking-6a1cb1f8ec7c https://medium.com/@anilkreddyr/kubernetes-with-flannel-understanding-the-networking-part-2-78b53e5364c7 https://itnext.io/managing-ingress-controllers-on-kubernetes-part-2-36a64439e70a https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/ https://github.com/kubernetes/ingress-nginx https://kubernetes.io/docs/concepts/services-networking/service/ https://kubernetes.io/docs/concepts/workloads/controllers/deployment/ https://helm.sh/ https://medium.com/@tao_66792/how-does-the-kubernetes-networking-work-part-3-910ae2f8dc08

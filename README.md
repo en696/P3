@@ -253,11 +253,40 @@ Wystartowanie nowych nodów w google cloud trwa minitu. A w infrastruktórze wł
 <h4>Jak diagnozować kontener z aplikacją</h4>
 
 Aby dostać dokładne informacje o podzie mozemy uzyc polecenia 
-kubectl describe pod 
 
+<b>kubectl describe pod nginx --namespace=projekt</b>
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/nginx_des.png)
+
+
+<b>kubectl describe svc nginx --namespace=projekt<b/>
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/svc_nginx.png)
 
 
 <h4>Jak diagnozować problemy z niedziałajaca aplikacja</h4>
+
+Przeprowadzę krok po kroku diagnoze aplikacji nginxa <br>
+
+Zaczynymi diagnoze od sprawdzenia czy działają nody kubernetesa <br> 
+
+<b>gcloud compute instances list</b> <br>
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/nody_dzialaja.png)
+
+
+Jesli działaja nalezy zobaczyć czy sam klaster jest sprawny <br> 
+
+<b>kubectl cluster-info</b> <br>
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/klaster.png)
+
+
+
 
 
 <h1>4.2.5 Kosztorys</h1>

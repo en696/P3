@@ -266,8 +266,6 @@ Aby dostać dokładne informacje o podzie mozemy uzyc polecenia
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/svc_nginx.png)
 
 
-<h4>Jak diagnozować problemy z niedziałajaca aplikacja</h4>
-
 Przeprowadzę krok po kroku diagnoze aplikacji nginxa <br>
 
 Zaczynymi diagnoze od sprawdzenia czy działają nody kubernetesa <br> 
@@ -283,7 +281,21 @@ Jesli działaja nalezy zobaczyć czy sam klaster jest sprawny <br>
 <b>kubectl cluster-info</b> <br>
 
 
-![Diagram](https://github.com/en696/P3/blob/master/Obrazki/klaster.png)
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/kluster.png)
+
+
+Sprawdzmy logi wewnatrz aplikacji nginxa 
+
+Nalezy znaleść labelke do wszystkich podów nginxa
+
+kubectl get pods --show-labels
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/labels.png)
+
+
+Teraz możemy szukać logów nabierząco dla wszystkich contenerów gdzie działa nginx 
+
+<b>kubectl logs -f -l task=nginx --all-containers</b>
 
 
 

@@ -284,6 +284,43 @@ Jesli działaja nalezy zobaczyć czy sam klaster jest sprawny <br>
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/kluster.png)
 
 
+<b>kubectl get componentstatus</b> <br>
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/status.png)
+
+
+Sprawdzenie czy działa traefik-controler
+
+
+
+<b>kubectl get pod --all-namespaces | grep traefik-ingress-controller</b>
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/controler.png)
+
+Mozmy rownież sprawdzić logi wewnetrzne traefika <br>
+
+<b>kubectl logs -f traefik-ingress-controller-7bfd55496c-pvhtt --namespace=kube-system</b>
+
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/logi-controler.png)
+
+
+<b>Sprawdzamy czy dashbord na odpowiada</b> <br>
+
+http://edomin.pl/dashboard/
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/dashboard.png)
+
+
+Sprawdzamy jaki mamy wielki ruch oraz czy mamy błedy 4XXs oraz 5XXs
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/dashboard_logi.png)
+
+
 Sprawdzmy logi wewnatrz aplikacji nginxa 
 
 Nalezy znaleść labelke do wszystkich podów nginxa

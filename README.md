@@ -217,6 +217,10 @@ Wystartowanie nowych nodów w google cloud trwa minitu. A w infrastruktórze wł
 Obiekty depolyment który zastosowaliśmy możemy ustawić automatyczne skalowanie przez odanie minimalnej oraz maksymalnej liczby podów. <br>
 Pody automatycznie się zeskalują do wartości maksymalnej podczas duzego obciazenia podów , oraz gdy obziazenie się zniejszy ilość podów znowu wróci do mniejszej liczby podów
 
+<b>kubectl autoscale deployment nginx --cpu-percent=50 --min=1 --max=10 --namespace=projekt</b>
+Ustawia minimalna ilość działajacych podów na 1 a maksymalną na 10 jeśli obciązenie procesora bedzie wieksze niz 50 %
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/autoscale.png)
 
 
 Możemy rownież recznie wymusić skalowanie 

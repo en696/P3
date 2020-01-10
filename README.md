@@ -81,6 +81,42 @@ lynx http://edomin.pl/nginx
 
 <h1>4.2.2 Dokumentacja użytkownika</h1>
 
+<h4>Jak skalować aplikacje</h4>
+
+Obiekty depolyment który zastosowaliśmy możemy ustawić automatyczne skalowanie przez odanie minimalnej oraz maksymalnej liczby podów. <br>
+Pody automatycznie się zeskalują do wartości maksymalnej podczas duzego obciazenia podów , oraz gdy obziazenie się zniejszy ilość podów znowu wróci do mniejszej liczby podów
+
+<b>kubectl autoscale deployment nginx --cpu-percent=50 --min=1 --max=10 --namespace=projekt</b> <br>
+Ustawia minimalna ilość działajacych podów na 1 a maksymalną na 10 jeśli obciązenie procesora bedzie wieksze niz 50 %
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/autoscale.png)
+
+
+<b>kubectl get hpa --namespace=projekt</b> <br>
+
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/sprawdzenie_autoscale.png)
+
+
+Możemy rownież recznie wymusić skalowanie 
+
+Domyślnie cheese-deployments.yaml zawiera każdego poda w dwóch replikach. Ale możemy łatwo zeskalować wszystkie obiekty do 3 szt  zawarte w tym pliku za pomocą 
+
+<b>kubectl scale --replicas=3 -f cheese-deployments.yaml</b>
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/scale.png)
+
+
+<b>kubectl get pod  --namespace=projekt</b>
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/skalowanie.png)
+
+
+W taki sam sposób mozemy zmniejszyć liczbe działajacych podów
+
+<h4>Jak wgrać nową wersje aplikacji</h4>
 
 <h1>4.2.3 Dokumentacja wdrażania</h1>
 
@@ -212,39 +248,13 @@ Rownież mamy o wiele łatwiejsze skalowanie samej infrastruktóry ponieważ bar
 Wystartowanie nowych nodów w google cloud trwa minitu. A w infrastruktórze własnej mogło by nawet trwać miesiąć jesli mósielibysy zamówićnowy server dostarczyc go do DC oraz wpiąć go do klastra.
 
 
-<h4>Jak skalować aplikacje</h4>
-
-Obiekty depolyment który zastosowaliśmy możemy ustawić automatyczne skalowanie przez odanie minimalnej oraz maksymalnej liczby podów. <br>
-Pody automatycznie się zeskalują do wartości maksymalnej podczas duzego obciazenia podów , oraz gdy obziazenie się zniejszy ilość podów znowu wróci do mniejszej liczby podów
-
-<b>kubectl autoscale deployment nginx --cpu-percent=50 --min=1 --max=10 --namespace=projekt</b>
-Ustawia minimalna ilość działajacych podów na 1 a maksymalną na 10 jeśli obciązenie procesora bedzie wieksze niz 50 %
-
-![Diagram](https://github.com/en696/P3/blob/master/Obrazki/autoscale.png)
-
-
-Możemy rownież recznie wymusić skalowanie 
-
-Domyślnie cheese-deployments.yaml zawiera każdego poda w dwóch replikach. Ale możemy łatwo zeskalować wszystkie obiekty do 3 szt  zawarte w tym pliku za pomocą 
-
-<b>kubectl scale --replicas=3 -f cheese-deployments.yaml</b>
-
-![Diagram](https://github.com/en696/P3/blob/master/Obrazki/scale.png)
-
-
-<b>kubectl get pod  --namespace=projekt</b>
-
-
-![Diagram](https://github.com/en696/P3/blob/master/Obrazki/skalowanie.png)
-
-
-W taki sam sposób mozemy zmniejszyć liczbe działajacych podów
-
-
 <h4>Jak wgrać nową wersje aplikacji</h4>
 
-
 <h4>Jak diagnozować kontener z aplikacją</h4>
+
+Aby dostać dokładne informacje o podzie mozemy uzyc polecenia 
+kubectl describe pod 
+
 
 
 <h4>Jak diagnozować problemy z niedziałajaca aplikacja</h4>

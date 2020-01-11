@@ -418,6 +418,24 @@ Czy działają nginx pody
 
 Czy działa autoscale
 
+kubectl get deployment nginx --namespace=projekt
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/dep.png)
+
+
+kubectl run --generator=run-pod/v1 -it --rm load-generator --image=busybox /bin/sh
+
+Generowanie ruchu 
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/while.png)
+
+
+kubectl get deployment nginx --namespace=projekt <br>
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/dp_nginx_p.png)
+
+
 
 Czy działa Load Balanser
 

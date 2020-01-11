@@ -420,6 +420,11 @@ Czy działa Load Balanser
 Czy działa dashboard
 
 
+http://edomin.pl/dashboard/
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/dashboard.png)
+
 <h1>4.3 Wnioski końcowe</h1>
 
 <h1>4.4 Literatura</h1>

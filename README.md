@@ -440,6 +440,19 @@ kubectl get deployment nginx --namespace=projekt <br>
 Czy działa Load Balanser
 
 
+lynx http://edomin.pl/nginx
+
+<h4>Pierwsza próba</h4>
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/ngnix1.png)
+
+
+<h4>Druga próba</h4>
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/ngnix2.png)
+
+
+
 Czy działa dashboard
 
 

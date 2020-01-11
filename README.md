@@ -346,7 +346,6 @@ Teraz możemy szukać logów nabierząco dla wszystkich contenerów gdzie dział
 
 
 
-
 <h1>4.2.5 Kosztorys</h1>
 
 <h3> Miesieczny koszt utrzymania ceny na dzień 01.01.2020</h3>
@@ -379,6 +378,48 @@ Koszt wdrożenia to około 3-5h pracy x 200 zł per h to około 600-1000zł
 Koszt aktualizacji konfiguracji  klastra jest zalezny od pracochłoności zadania godzina pracy to 200 zł 
 
 <h1>4.2.5 Końcowe testy</h1>
+
+Czy działa  klaster
+
+<b>kubectl cluster-info</b> <br>
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/kluster.png)
+
+Czy działają nody
+
+kubectl get node -o wide
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/node_wide.png)
+
+
+Czy działa ingress-controler
+
+<b>kubectl get pod --all-namespaces | grep traefik-ingress-controller</b>
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/controler.png)
+
+
+Czy działa service nginxa
+
+kubectl describe svc nginx --namespace=projekt
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/svc-nc.png)
+
+
+Czy działa nginx pody
+
+
+Czy działa autoscale
+
+
+Czy działa Load Balanser
+
+
+Czy działa dashboard
+
+
 <h1>4.3 Wnioski końcowe</h1>
 
 <h1>4.4 Literatura</h1>

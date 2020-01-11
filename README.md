@@ -408,7 +408,12 @@ kubectl describe svc nginx --namespace=projekt
 ![Diagram](https://github.com/en696/P3/blob/master/Obrazki/svc-nc.png)
 
 
-Czy działa nginx pody
+Czy działają nginx pody
+
+ kubectl get pod -o wide --show-labels --namespace=projekt -l task=nginx
+
+
+![Diagram](https://github.com/en696/P3/blob/master/Obrazki/nginx_labels.png)
 
 
 Czy działa autoscale
